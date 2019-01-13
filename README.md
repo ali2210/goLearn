@@ -1,9 +1,12 @@
 # goLearn
 you try yourselve
-### build 
+
+# commands
+## build 
 go build lissa.go
 ./lissa >lissa.png
-
+## run
+go run coma.go
 
 # 1. 3D-SHAPE basic geometry concept
 ## formula
