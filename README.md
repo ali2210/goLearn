@@ -9,6 +9,7 @@ go build lissa.go
 go run coma.go
 
 
+
 # GoTutorials
 ## 1. 3D-SHAPE basic geometry concept
 ### formula
@@ -19,7 +20,11 @@ go run coma.go
           1. int version
           2. float version
 ## 5. anagram
-
+## 6. differhash
+## 7. command-line-flag
+          $ go build command-line-flag.go
+          $ ./command-line-flag -sha256=sha256
+         
 
 
 # Resource
