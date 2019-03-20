@@ -31,7 +31,7 @@ go run coma.go
           the go programming language {donovan}
 
 
-[contact us]
+[contact info]
       #  alideveloper95@gmail.com
       # ceo-koohinoor.slack.com
       # https://gitter.im/Kooh-i-Noor/Lobby?source=orgpage
