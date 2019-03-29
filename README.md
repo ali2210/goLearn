@@ -24,7 +24,8 @@ go run coma.go
 ## 7. command-line-flag
           $ go build command-line-flag.go
           $ ./command-line-flag -sha256=sha256
-         
+### 8. types
+### 9. challenges for you
 
 
 # Resource
