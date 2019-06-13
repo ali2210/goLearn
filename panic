@@ -1,0 +1,29 @@
+package main
+
+import (
+	"fmt"
+)
+
+	type Person struct{
+		name string
+	}
+	var students *Person
+
+func main() {
+	var stds Person
+	var name string = "ali"
+	s := handle(&stds)
+	(*s).name = name
+	fmt.Println((*s).name)
+}
+
+func handle(std *Person)(*Person){
+	defer func(){
+		if t := recover(); t != nil {
+			fmt.Println("recovering")
+			panic(t)
+		}
+	}()	
+	return std
+	
+}
