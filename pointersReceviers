@@ -1,0 +1,30 @@
+package main
+
+import (
+	"fmt"
+)
+
+	type Cal struct{
+		y int
+	}
+	
+	func(c *Cal)Sum(y int) int{
+		return c.y -y
+	}
+
+func main() {
+	// case 1
+	rec := Cal{3}
+	res := rec.Sum(2)
+	fmt.Println(res)
+	
+	// case 2
+	r := Cal{4}
+	re := &r
+	fmt.Println(re.Sum(2))
+	
+	//case 3
+	rc := Cal{5}
+	fmt.Println((&rc).Sum(2))
+	
+}
