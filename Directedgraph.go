@@ -23,5 +23,10 @@ func hasEdge(start, end string)bool{
 	return graph[start][end]
 }
 
+/* CASE-1 DATA NOT EXIT IT WILL RETURN false
+   CASE-2 Data exit it always return true */
+https://play.golang.org/p/lyZsmnpw1Tu
+
+
 
 
