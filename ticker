@@ -1,0 +1,28 @@
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+// reference : https://gobyexample.com/tickers
+
+func main() {
+	ticker := time.NewTicker(3 *time.Millisecond)
+	fire := make(chan bool)
+	go func() {
+        for {
+            select {
+            case <-fire:
+                return
+            case t := <-ticker.C:
+                fmt.Println("Tick at", t)
+            }
+        }
+    }()
+	time.Sleep(10 * time.Millisecond)
+	ticker.Stop()
+	fire <- true
+	fmt.Print("stoped")
+	
+}
